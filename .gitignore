@@ -1,797 +1,345 @@
 # ============================================================================
-# ATENA Ω - ULTIMATE SECURE GITIGNORE v5.0
-# Proteção de Propriedade Intelectual e Dados Sensíveis
-# Copyright © 2026 Danilo Gomes - Todos os direitos reservados
+# ATENA Ω - GIT IGNORE (PROTEÇÃO DE DADOS SENSÍVEIS) v6.0
+# PROTEÇÃO ESPECIAL: knowledge.db (ARQUIVO CRÍTICO)
 # ============================================================================
 
 # ============================================================================
-# ⚡ BLOQUEIO DE PROPRIEDADE INTELECTUAL
+# 🔴 PROTEÇÃO ABSOLUTA - KNOWLEDGE.DB (ARQUIVO MAIS IMPORTANTE)
 # ============================================================================
 
-# Código Fonte Crítico (NUNCA versionar!)
-/src/core/athena_engine.py
-/src/exploits/*.py
-/src/payloads/*.py
-/src/evasion/*.py
-/src/ai/neural_networks.py
-/src/ai/trained_models/
+# Bloquear knowledge.db em QUALQUER local (proteção máxima)
+**/knowledge.db
+**/knowledge.db.*
+**/knowledge-*.db
+**/knowledge_*.db
+**/knowledge-base.db
+**/knowledge_base.db
+**/knowledgebase.db
+**/kb.db
+**/kdb.db
 
-# Algoritmos Proprietários
-/athena_core/
-/private/
-/proprietary/
-/patents/
-/trade_secrets/
+# Bloquear em diretórios específicos (redundância)
+/knowledge.db
+/knowledge_base/knowledge.db
+/data/knowledge.db
+/db/knowledge.db
+/database/knowledge.db
+/storage/knowledge.db
+/cache/knowledge.db
+/backup/knowledge.db
+/backups/knowledge.db
 
-# ============================================================================
-# 🔐 CREDENCIAIS E CHAVES (NUNCA COMMITAR!)
-# ============================================================================
+# Bloquear backups do knowledge.db
+**/knowledge.db.bak
+**/knowledge.db.backup
+**/knowledge.db.old
+**/knowledge.db.tmp
+**/knowledge.db.temp
+**/knowledge.db.copy
+**/knowledge.db.clone
+**/knowledge.db.sync
+**/knowledge.db.version
+**/knowledge.db.v1
+**/knowledge.db.v2
+**/knowledge.db.202*
+**/knowledge.db.202[0-9][0-1][0-9][0-3][0-9]
 
-# Chaves de API e Tokens
-*.key
-*.pem
-*.p12
-*.pfx
-*.crt
-*.cer
-*.der
-*.p8
-*.p7b
-*.keystore
-*.jks
-*.keys
-*.secret
-*.token
-*.auth
-*.cred
-*.credentials
-*.credential
-.env
-.env.*
-.envrc
-secrets.*
-secrets/
-credentials/
-keys/
-certs/
-
-# Chaves de Criptografia
-/atena_encryption_key.txt
-/aes_key.bin
-/rsa_private.pem
-/rsa_public.pem
-/ec_private.key
-/ec_public.key
-/ssl/
-/tls/
-/certificates/
-
-# Tokens de Serviços Cloud
-*service-account.json
-*service-account.key
-*aws-cred*
-*azure-cred*
-*gcp-cred*
-*digitalocean-cred*
-*heroku-cred*
-*firebase-cred*
-*s3-cred*
+# Bloquear arquivos relacionados
+**/knowledge.db-wal
+**/knowledge.db-shm
+**/knowledge.db-journal
+**/knowledge.db.encrypted
+**/knowledge.db.enc
+**/knowledge.db.aes
+**/knowledge.db.gpg
 
 # ============================================================================
-# 📊 BANCOS DE DADOS E PERSISTÊNCIA
+# 🔴 PROTEÇÃO DE TODOS OS BANCOS DE DADOS (INCLUINDO KNOWLEDGE.DB)
 # ============================================================================
 
-# Bases de Conhecimento Sensíveis
-/knowledge_base/
-/kb/
-/knowledge/
-/data/
-
-# Arquivos de Banco de Dados
+# SQLite (knowledge.db é SQLite)
 *.db
 *.sqlite
 *.sqlite3
 *.db3
-*.dblite
-*.mdb
-*.accdb
-*.frm
-*.ibd
-*.myd
-*.myi
-*.dbf
-*.db-shm
-*.db-wal
-*-journal
+*.sdb
+*.sqlitedb
 
-# Dados Serializados
-*.pkl
-*.pickle
-*.joblib
-*.sav
-*.model
-*.h5
-*.hdf5
-*.onnx
-*.pb
-*.tflite
-*.pth
-*.pt
-*.ckpt
-*.bin
-*.dat
-*.data
-*.idx
-*.index
+# Bloquear QUALQUER .db em qualquer lugar
+**/*.db
+**/*.sqlite
+**/*.sqlite3
 
-# Documentos e Arquivos
-*.pdf
-*.doc
-*.docx
-*.xls
-*.xlsx
-*.ppt
-*.pptx
-*.odt
-*.ods
-*.odp
-*.rtf
-*.tex
+# Diretórios específicos que podem conter knowledge.db
+/knowledge_base/
+/kb/
+/data/
+/database/
+/db/
+/storage/
+/persistence/
+/sqlite/
 
 # ============================================================================
-# 📝 LOGS E HISTÓRICO DE OPERAÇÕES (DADOS DO DANILO GOMES)
+# 🔴 PROTEÇÃO CONTRA BACKUPS E CÓPIAS DO KNOWLEDGE.DB
 # ============================================================================
 
-# Logs de Atividade
-/logs/
+# Backups manuais
+knowledge.db.bak
+knowledge.db.backup
+knowledge.db.old
+knowledge.db.orig
+knowledge.db.copy
+knowledge.db.save
+knowledge.db.sav
+knowledge.db.dump
+knowledge.db.export
+knowledge.db.json
+knowledge.db.csv
+knowledge.db.xml
+knowledge.db.yaml
+knowledge.db.yml
+
+# Backups automáticos
+knowledge.db.auto
+knowledge.db.autosave
+knowledge.db.autobackup
+knowledge.db.timestamp
+knowledge.db.date
+knowledge.db.time
+
+# Backups com data
+knowledge.db.2026*
+knowledge.db.2025*
+knowledge.db.2024*
+knowledge.db.Jan*
+knowledge.db.Feb*
+knowledge.db.Mar*
+knowledge.db.Apr*
+knowledge.db.May*
+knowledge.db.Jun*
+knowledge.db.Jul*
+knowledge.db.Aug*
+knowledge.db.Sep*
+knowledge.db.Oct*
+knowledge.db.Nov*
+knowledge.db.Dec*
+
+# ============================================================================
+# 🔴 PROTEÇÃO DE ARQUIVOS RELACIONADOS AO KNOWLEDGE.DB
+# ============================================================================
+
+# Índices e logs do banco
+knowledge.db.index
+knowledge.db.log
+knowledge.db.error
+knowledge.db.debug
+knowledge.db.trace
+knowledge.db.audit
+
+# Metadados do banco
+knowledge.db.meta
+knowledge.db.metadata
+knowledge.db.schema
+knowledge.db.structure
+knowledge.db.ddl
+knowledge.db.dml
+
+# Versões e migrações
+knowledge.db.v1
+knowledge.db.v2
+knowledge.db.v3
+knowledge.db.v4
+knowledge.db.v5
+knowledge.db.old.v1
+knowledge.db.old.v2
+knowledge.db.new
+knowledge.db.latest
+knowledge.db.current
+knowledge.db.previous
+
+# ============================================================================
+# 🔴 PROTEÇÃO DE CACHE E TEMPORÁRIOS DO KNOWLEDGE.DB
+# ============================================================================
+
+# Cache do banco
+knowledge.db.cache
+knowledge.db.cached
+knowledge.db.tempcache
+knowledge.db.temp
+knowledge.db.tmp
+knowledge.db.temporary
+knowledge.db.working
+
+# Arquivos de transação
+knowledge.db.transaction
+knowledge.db.txn
+knowledge.db.lock
+knowledge.db.locked
+knowledge.db.busy
+
+# ============================================================================
+# 🔴 PROTEÇÃO DE EXPORTAÇÕES DO KNOWLEDGE.DB
+# ============================================================================
+
+# Exportações para outros formatos
+knowledge.db.json
+knowledge.db.csv
+knowledge.db.tsv
+knowledge.db.parquet
+knowledge.db.feather
+knowledge.db.arrow
+knowledge.db.orc
+knowledge.db.avro
+knowledge.db.xml
+knowledge.db.yaml
+knowledge.db.yml
+knowledge.db.txt
+knowledge.db.text
+knowledge.db.markdown
+knowledge.db.md
+knowledge.db.html
+knowledge.db.htm
+knowledge.db.xls
+knowledge.db.xlsx
+knowledge.db.ods
+knowledge.db.pdf
+
+# ============================================================================
+# 🔴 PROTEÇÃO DE ARQUIVOS CRIPTOGRAFADOS DO KNOWLEDGE.DB
+# ============================================================================
+
+# Versões criptografadas
+knowledge.db.enc
+knowledge.db.encrypted
+knowledge.db.aes
+knowledge.db.aes256
+knowledge.db.gpg
+knowledge.db.pgp
+knowledge.db.asc
+knowledge.db.7z
+knowledge.db.zip
+knowledge.db.rar
+knowledge.db.tar
+knowledge.db.tar.gz
+knowledge.db.tgz
+knowledge.db.gz
+knowledge.db.bz2
+knowledge.db.xz
+knowledge.db.zst
+
+# ============================================================================
+# 🟡 BANCOS DE DADOS ADICIONAIS (PROTEÇÃO SECUNDÁRIA)
+# ============================================================================
+
+# Outros bancos importantes
+*.knowledge.db
+*.knowledge.sqlite
+*.knowledge.sqlite3
+*_knowledge.db
+*-knowledge.db
+/knowledge-*.db
+/knowledge_*.db
+
+# Bancos de dados relacionados
+/exploits.db
+/vulnerabilities.db
+/targets.db
+/sessions.db
+/audit.db
+/security.db
+/scan.db
+/results.db
+/data.db
+/cache.db
+/memory.db
+/storage.db
+/persistence.db
+
+# ============================================================================
+# 🟡 LOGS QUE PODEM CONTER REFERÊNCIAS AO KNOWLEDGE.DB
+# ============================================================================
+
+# Logs que podem mencionar o knowledge.db
 *.log
 *.logs
-*.log.*
-*.out
-*.err
-*.output
-*.debug
-*.trace
 *.audit
-*.access
+*.trace
+*.debug
 *.error
-*.applog
 
-# Histórico de Comandos
-.history
-.bash_history
-.zsh_history
-.fish_history
-.python_history
-.mysql_history
-.psql_history
-.redis_history
-.node_repl_history
-
-# Relatórios de Segurança
-/reports/
-/report_*.json
-/report_*.html
-/report_*.pdf
-/report_*.txt
-/audit_*.log
-/scan_*.log
-/vuln_*.log
-/exploit_*.log
+# Logs específicos
+/database.log
+/sqlite.log
+/db.log
+/knowledge.log
+/kb.log
 
 # ============================================================================
-# 🔄 BACKUPS E CACHE (EVITAR POLUIÇÃO)
+# 🟢 EXCEÇÕES CONTROLADAS (APENAS SE ABSOLUTAMENTE NECESSÁRIO)
 # ============================================================================
 
-# Backups
-/backups/
-*.bak
-*.backup
-*.bkp
-*.old
-*.orig
-*.tmp
-*.temp
-*.swp
-*.swo
-*.swn
-*~
-~*
+# NUNCA versionar knowledge.db real, apenas exemplos vazios
+!knowledge.db.example
+!knowledge.db.sample
+!knowledge.db.template
+!knowledge.db.empty
+!knowledge.db.schema
+!knowledge.db.structure.sql
+!knowledge.db.ddl.sql
 
-# Cache de Desenvolvimento
-/cache/
-/__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.pyc/
-.pyo/
-.pyd/
-__pycache__/
-
-# Cache de IDE
-.vscode/
-.idea/
-*.sublime-*
-.project
-.classpath
-.settings/
-*.code-workspace
-*.vscode*
-
-# Cache de Build
-/build/
-/dist/
-/*.egg-info/
-/*.egg
-/*.whl
-/*.tar.gz
-/*.zip
-/*.rar
-/*.7z
-/*.dmg
-/*.exe
-/*.msi
-/*.deb
-/*.rpm
-/*.apk
-/*.ipa
+# Exemplos documentados
+!/examples/knowledge.db.example
+!/samples/knowledge.db.sample
+!/templates/knowledge.db.template
+!/docs/schemas/knowledge.db.sql
 
 # ============================================================================
-# 🧠 MODELOS DE IA E DADOS DE TREINAMENTO (EVITAR LENTIDÃO)
+# 📋 ARQUIVO DE ALERTA - README SOBRE O KNOWLEDGE.DB
 # ============================================================================
 
-# Modelos Treinados
-/models/
-/modelos/
-/weights/
-/checkpoints/
-*.h5
-*.hdf5
-*.pt
-*.pth
-*.ckpt
-*.bin
-*.onnx
-*.pb
-*.tflite
-*.mlmodel
-*.caffemodel
-*.caffemodel.h5
-*.caffemodel.pt
-*.mar
-*.torchscript
-
-# Dados de Treinamento
-/datasets/
-/data_raw/
-/data_processed/
-/train/
-/test/
-/validation/
-/samples/
-*.tfrecord
-*.record
-*.arrow
-*.parquet
-*.feather
-*.orc
-*.avro
-*.npy
-*.npz
-*.mat
-*.csv
-*.tsv
-
-# Embeddings e Vetores
-/embeddings/
-/vectors/
-*.vec
-*.bin
-*.index
-*.ivf
-*.faiss
+# Arquivo de aviso para quem tentar adicionar o knowledge.db
+README-KNOWLEDGE-DB.md
+!README-KNOWLEDGE-DB.md
 
 # ============================================================================
-# 🔒 ARQUIVOS DE CONFIGURAÇÃO SENSÍVEIS
+# 🔒 BLOQUEIO TOTAL DE OUTROS ARQUIVOS SENSÍVEIS
 # ============================================================================
 
-# Configurações de Aplicação
-config.json
-config.yaml
-config.yml
-config.toml
-config.ini
-config.cfg
-application.properties
-application.yml
-application.yaml
-settings.json
-settings.py
-local_settings.py
-*.local
-*.dev
-*.prod
-*.staging
-
-# Configurações de Rede e Segurança
-/etc/
-network_config/
-firewall_rules/
-iptables/
-nftables/
-pf.conf
-*.conf
-*.rules
-*.policy
-
-# Configurações de Usuário
-.profile
-.bashrc
-.zshrc
-.fishrc
-.gitconfig
-.git-credentials
-.git-credential
-.netrc
-.npmrc
-.yarnrc
-.pypirc
-.pip.conf
-.docker/config.json
-
-# ============================================================================
-# 🌐 ARQUIVOS DE SISTEMA E AMBIENTE
-# ============================================================================
-
-# Sistema Operacional
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-*.lnk
-*.desktop
-*.directory
-*.ini
-*.msi
-*.dll
-*.so
-*.dylib
-*.exe
-*.com
-*.bat
-*.cmd
-*.ps1
-*.vbs
-*.scr
-
-# Android/Termux Específico
-/data/data/com.termux/
-/storage/
-/sdcard/
-/mnt/
-/last_sync
-.termux/
-.bash_history.termux
-.zsh_history.termux
-.com.termux*
-
-# Docker
-Dockerfile
-docker-compose.yml
-docker-compose.yaml
-.dockerignore
-.docker/
-*.docker
-
-# ============================================================================
-# 📦 DEPENDÊNCIAS E PACOTES (NÃO VERSIONAR)
-# ============================================================================
-
-# Python
-venv/
-env/
-.venv/
-.env/
-virtualenv/
-env3/
-pyenv/
-ENV/
-env.bak/
-venv.bak/
-lib/
-lib64/
-lib/python*/
-include/
-bin/
-man/
-pip-wheel-metadata/
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Node.js
-node_modules/
-npm-debug.log
-yarn-debug.log
-yarn-error.log
-package-lock.json
-yarn.lock
-.pnpm-debug.log
-.lerna
-
-# Java
-target/
-*.class
-*.war
-*.jar
-*.ear
-*.nar
-hs_err_pid*
-.recommenders
-.mtj.tmp/
-
-# Ruby
-.bundle/
-vendor/bundle/
-Gemfile.lock
-.ruby-version
-.ruby-gemset
-
-# Go
-vendor/
-go.sum
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
-*.test
-*.out
-
-# Rust
-/target/
-**/*.rs.bk
-Cargo.lock
-
-# ============================================================================
-# 🛡️ ARQUIVOS DE SEGURANÇA E AUDITORIA
-# ============================================================================
-
-# Resultados de Varredura
-/scan_results/
-/vulnerabilities/
-/exploits_found/
-/payloads_generated/
-/session_*.json
-/attack_*.log
-/breach_*.log
-/penetration_*.log
-
-# Dados de Vítimas/Testes (NUNCA COMMITAR!)
-/victim_data/
-/target_data/
-/client_data/
-/customer_data/
-/user_data/
-/personal_data/
-/sensitive/
-/confidential/
-/restricted/
-/classified/
-
-# Evidências Forenses
-/forensics/
-/evidence/
-/capture/
-/pcap/
-/dump/
-/memory_dump/
-/disk_dump/
-
-# ============================================================================
-# 📁 DIRETÓRIOS ESPECÍFICOS DA ATENA
-# ============================================================================
-
-# Diretórios de Trabalho
-/work/
-/temp/
-/tmp/
-/runtime/
-/scratch/
-/staging/
-/archive/
-/old/
-/legacy/
-/deprecated/
-/experimental/
-/unused/
-/to_sort/
-/in_progress/
-
-# Diretórios de Usuário
-/home/
-/Users/
-/root/
-/Users/danilo/
-/home/danilo/
-/danilo/
-/danilo_gomes/
-
-# Diretórios de Sistema
-/proc/
-/sys/
-/dev/
-/boot/
-/usr/
-/var/
-/opt/
-/etc/
-
-# ============================================================================
-# 📝 ARQUIVOS DE METADADOS E ÍNDICES
-# ============================================================================
-
-# Git
-.git/
-.gitignore
-.gitattributes
-.gitmodules
-.gitkeep
-.gitignore_global
-.git-rewrite/
-
-# Version Control
-.svn/
-.hg/
-.bzr/
-.cvs/
-.github/
-.gitlab/
-.bitbucket/
-
-# IDE Metadata
-.project
-.classpath
-.settings/
-.idea/
-.vscode/
-*.sublime-*
-*.komodotools*
-*.netbeans*
-*.nbproject/
-
-# ============================================================================
-# 🔄 ARQUIVOS DE SINCRONIZAÇÃO
-# ============================================================================
-
-# Sync Metadata
-.last_sync
-.sync/
-.sync_state
-.sync_conflict*
-.sync_archive/
-.sync_temp/
-.sync_cache/
-.sync_log/
-.sync_lock
-.sync_token
-
-# Cloud Sync
-.dropbox/
-.google_drive/
-.one_drive/
-.icloud/
-.nextcloud/
-.owncloud/
-.mega/
-.pcloud/
-.box/
-.yandex_disk/
-
-# ============================================================================
-# ⚠️ REGRAS DE PROTEÇÃO ADICIONAIS (GLOBAL)
-# ============================================================================
-
-# Bloquear TODOS os arquivos .env em qualquer local
-**/.env
-**/.env.*
-**/env.*
-**/environment.*
-
-# Bloquear TODOS os arquivos de log
-**/*.log
-**/logs/
-**/Logs/
-
-# Bloquear TODOS os arquivos de configuração sensíveis
-**/config.*
-**/configuration.*
-**/settings.*
-**/secret.*
-**/private.*
-**/personal.*
-
-# Bloquear TODOS os arquivos de dados de usuário
-**/user.*
-**/users.*
-**/profile.*
-**/account.*
-**/password.*
-
-# Bloquear TODOS os backups
-**/*.backup
-**/*.bak
-**/backup/
-**/Backup/
-
-# ============================================================================
-# 🚫 BLOQUEIO TOTAL PARA CERTOS TIPOS DE ARQUIVO
-# ============================================================================
-
-# Bloquear TODOS os tipos de arquivo abaixo, em QUALQUER local
+# Chaves e credenciais
 *.key
 *.pem
 *.crt
-*.cer
-*.p12
-*.pfx
-*.jks
-*.keystore
-*.secrets
-*.cred
-*.credential
-*.credentials
 *.env
-*.envrc
-*.id_rsa
-*.id_dsa
-*.id_ecdsa
-*.id_ed25519
-*.pgp
-*.gpg
-*.asc
-*.kdbx
-*.kdb
-*.db
-*.sqlite
-*.sql
-*.mdb
-*.accdb
-*.frm
-*.ibd
-*.myd
-*.myi
-*.dbf
-*.pkl
-*.pickle
-*.joblib
-*.sav
-*.model
-*.h5
-*.hdf5
-*.onnx
-*.pb
-*.tflite
-*.pt
-*.pth
-*.ckpt
-*.bin
-*.dat
-*.idx
-*.index
-*.log
-*.logs
-*.out
-*.err
-*.output
-*.debug
-*.trace
-*.audit
-*.access
-*.error
-*.applog
-*.history
-*.pdf
-*.doc
-*.docx
-*.xls
-*.xlsx
-*.ppt
-*.pptx
-*.odt
-*.ods
-*.odp
-*.rtf
-*.tex
+.env.*
+secrets.*
+credentials.*
+
+# Configurações
+config.json
+config.yaml
+config.yml
+settings.json
+local_settings.py
+
+# Backups em geral
 *.bak
 *.backup
-*.bkp
 *.old
-*.orig
-*.tmp
-*.temp
-*.swp
-*.swo
-*.swn
-*~
-~*
+backups/
+Backups/
+
+# Cache
+__pycache__/
 *.pyc
-*.pyo
-*.pyd
-*.exe
-*.dll
-*.so
-*.dylib
-*.msi
-*.deb
-*.rpm
-*.apk
-*.ipa
+cache/
+Cache/
 
 # ============================================================================
-# 📌 EXCEÇÕES (ARQUIVOS QUE DEVEM SER VERSIONADOS)
+# ⚠️ ALERTA DE SEGURANÇA
 # ============================================================================
 
-# Templates e Exemplos
-!config.example
-!config.sample
-!.env.example
-!.env.sample
-!*.example.*
-!*.sample.*
-
-# Documentação Pública
-!README.md
-!LICENSE
-!CONTRIBUTING.md
-!CODE_OF_CONDUCT.md
-!SECURITY.md
-!CHANGELOG.md
-!docs/
-!*.md
-!*.txt
-!*.rst
-
-# Scripts Públicos
-!scripts/
-!tools/
-!utils/
-!*.sh
-!*.py
-!*.pl
-!*.rb
-!*.php
-!*.js
-!*.html
-!*.css
-
-# Arquivos de Configuração Públicos
-!.gitignore
-!.gitattributes
-!.editorconfig
-!.pre-commit-config.yaml
-!.dockerignore
-!.gitkeep
-!.npmignore
-!.eslintignore
-!.prettierignore
-!.stylelintignore
-
-# ============================================================================
-# 🔐 PROTEÇÃO FINAL - POLÍTICA DE SEGURANÇA
-# ============================================================================
-
-# Comentário de segurança no topo do arquivo
-# ⚠️ ATENÇÃO: Este .gitignore contém regras de segurança críticas
-# ⚠️ Não modifique sem autorização explícita do Danilo Gomes
-# ⚠️ Qualquer violação será rastreada e auditada
-
-# Forçar check de segurança em commits
-# (Requer git-secrets ou ferramenta similar)
-# git secrets --scan
-
-# Bloquear commit se arquivos sensíveis forem detectados
-# (Adicionar ao .git/hooks/pre-commit)
+# ⚠️ ATENÇÃO: O arquivo knowledge.db contém PROPRIEDADE INTELECTUAL
+# ⚠️ do Danilo Gomes. NUNCA versionar, compartilhar ou expor.
+# ⚠️ Este .gitignore protege ativamente contra commits acidentais.
+# ⚠️ Violações serão rastreadas e resultarão em ações legais.
