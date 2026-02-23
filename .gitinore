@@ -1,0 +1,797 @@
+# ============================================================================
+# ATENA Ω - ULTIMATE SECURE GITIGNORE v5.0
+# Proteção de Propriedade Intelectual e Dados Sensíveis
+# Copyright © 2026 Danilo Gomes - Todos os direitos reservados
+# ============================================================================
+
+# ============================================================================
+# ⚡ BLOQUEIO DE PROPRIEDADE INTELECTUAL
+# ============================================================================
+
+# Código Fonte Crítico (NUNCA versionar!)
+/src/core/athena_engine.py
+/src/exploits/*.py
+/src/payloads/*.py
+/src/evasion/*.py
+/src/ai/neural_networks.py
+/src/ai/trained_models/
+
+# Algoritmos Proprietários
+/athena_core/
+/private/
+/proprietary/
+/patents/
+/trade_secrets/
+
+# ============================================================================
+# 🔐 CREDENCIAIS E CHAVES (NUNCA COMMITAR!)
+# ============================================================================
+
+# Chaves de API e Tokens
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+*.p8
+*.p7b
+*.keystore
+*.jks
+*.keys
+*.secret
+*.token
+*.auth
+*.cred
+*.credentials
+*.credential
+.env
+.env.*
+.envrc
+secrets.*
+secrets/
+credentials/
+keys/
+certs/
+
+# Chaves de Criptografia
+/atena_encryption_key.txt
+/aes_key.bin
+/rsa_private.pem
+/rsa_public.pem
+/ec_private.key
+/ec_public.key
+/ssl/
+/tls/
+/certificates/
+
+# Tokens de Serviços Cloud
+*service-account.json
+*service-account.key
+*aws-cred*
+*azure-cred*
+*gcp-cred*
+*digitalocean-cred*
+*heroku-cred*
+*firebase-cred*
+*s3-cred*
+
+# ============================================================================
+# 📊 BANCOS DE DADOS E PERSISTÊNCIA
+# ============================================================================
+
+# Bases de Conhecimento Sensíveis
+/knowledge_base/
+/kb/
+/knowledge/
+/data/
+
+# Arquivos de Banco de Dados
+*.db
+*.sqlite
+*.sqlite3
+*.db3
+*.dblite
+*.mdb
+*.accdb
+*.frm
+*.ibd
+*.myd
+*.myi
+*.dbf
+*.db-shm
+*.db-wal
+*-journal
+
+# Dados Serializados
+*.pkl
+*.pickle
+*.joblib
+*.sav
+*.model
+*.h5
+*.hdf5
+*.onnx
+*.pb
+*.tflite
+*.pth
+*.pt
+*.ckpt
+*.bin
+*.dat
+*.data
+*.idx
+*.index
+
+# Documentos e Arquivos
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+*.odt
+*.ods
+*.odp
+*.rtf
+*.tex
+
+# ============================================================================
+# 📝 LOGS E HISTÓRICO DE OPERAÇÕES (DADOS DO DANILO GOMES)
+# ============================================================================
+
+# Logs de Atividade
+/logs/
+*.log
+*.logs
+*.log.*
+*.out
+*.err
+*.output
+*.debug
+*.trace
+*.audit
+*.access
+*.error
+*.applog
+
+# Histórico de Comandos
+.history
+.bash_history
+.zsh_history
+.fish_history
+.python_history
+.mysql_history
+.psql_history
+.redis_history
+.node_repl_history
+
+# Relatórios de Segurança
+/reports/
+/report_*.json
+/report_*.html
+/report_*.pdf
+/report_*.txt
+/audit_*.log
+/scan_*.log
+/vuln_*.log
+/exploit_*.log
+
+# ============================================================================
+# 🔄 BACKUPS E CACHE (EVITAR POLUIÇÃO)
+# ============================================================================
+
+# Backups
+/backups/
+*.bak
+*.backup
+*.bkp
+*.old
+*.orig
+*.tmp
+*.temp
+*.swp
+*.swo
+*.swn
+*~
+~*
+
+# Cache de Desenvolvimento
+/cache/
+/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pyc/
+.pyo/
+.pyd/
+__pycache__/
+
+# Cache de IDE
+.vscode/
+.idea/
+*.sublime-*
+.project
+.classpath
+.settings/
+*.code-workspace
+*.vscode*
+
+# Cache de Build
+/build/
+/dist/
+/*.egg-info/
+/*.egg
+/*.whl
+/*.tar.gz
+/*.zip
+/*.rar
+/*.7z
+/*.dmg
+/*.exe
+/*.msi
+/*.deb
+/*.rpm
+/*.apk
+/*.ipa
+
+# ============================================================================
+# 🧠 MODELOS DE IA E DADOS DE TREINAMENTO (EVITAR LENTIDÃO)
+# ============================================================================
+
+# Modelos Treinados
+/models/
+/modelos/
+/weights/
+/checkpoints/
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.onnx
+*.pb
+*.tflite
+*.mlmodel
+*.caffemodel
+*.caffemodel.h5
+*.caffemodel.pt
+*.mar
+*.torchscript
+
+# Dados de Treinamento
+/datasets/
+/data_raw/
+/data_processed/
+/train/
+/test/
+/validation/
+/samples/
+*.tfrecord
+*.record
+*.arrow
+*.parquet
+*.feather
+*.orc
+*.avro
+*.npy
+*.npz
+*.mat
+*.csv
+*.tsv
+
+# Embeddings e Vetores
+/embeddings/
+/vectors/
+*.vec
+*.bin
+*.index
+*.ivf
+*.faiss
+
+# ============================================================================
+# 🔒 ARQUIVOS DE CONFIGURAÇÃO SENSÍVEIS
+# ============================================================================
+
+# Configurações de Aplicação
+config.json
+config.yaml
+config.yml
+config.toml
+config.ini
+config.cfg
+application.properties
+application.yml
+application.yaml
+settings.json
+settings.py
+local_settings.py
+*.local
+*.dev
+*.prod
+*.staging
+
+# Configurações de Rede e Segurança
+/etc/
+network_config/
+firewall_rules/
+iptables/
+nftables/
+pf.conf
+*.conf
+*.rules
+*.policy
+
+# Configurações de Usuário
+.profile
+.bashrc
+.zshrc
+.fishrc
+.gitconfig
+.git-credentials
+.git-credential
+.netrc
+.npmrc
+.yarnrc
+.pypirc
+.pip.conf
+.docker/config.json
+
+# ============================================================================
+# 🌐 ARQUIVOS DE SISTEMA E AMBIENTE
+# ============================================================================
+
+# Sistema Operacional
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.lnk
+*.desktop
+*.directory
+*.ini
+*.msi
+*.dll
+*.so
+*.dylib
+*.exe
+*.com
+*.bat
+*.cmd
+*.ps1
+*.vbs
+*.scr
+
+# Android/Termux Específico
+/data/data/com.termux/
+/storage/
+/sdcard/
+/mnt/
+/last_sync
+.termux/
+.bash_history.termux
+.zsh_history.termux
+.com.termux*
+
+# Docker
+Dockerfile
+docker-compose.yml
+docker-compose.yaml
+.dockerignore
+.docker/
+*.docker
+
+# ============================================================================
+# 📦 DEPENDÊNCIAS E PACOTES (NÃO VERSIONAR)
+# ============================================================================
+
+# Python
+venv/
+env/
+.venv/
+.env/
+virtualenv/
+env3/
+pyenv/
+ENV/
+env.bak/
+venv.bak/
+lib/
+lib64/
+lib/python*/
+include/
+bin/
+man/
+pip-wheel-metadata/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+.pnpm-debug.log
+.lerna
+
+# Java
+target/
+*.class
+*.war
+*.jar
+*.ear
+*.nar
+hs_err_pid*
+.recommenders
+.mtj.tmp/
+
+# Ruby
+.bundle/
+vendor/bundle/
+Gemfile.lock
+.ruby-version
+.ruby-gemset
+
+# Go
+vendor/
+go.sum
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Rust
+/target/
+**/*.rs.bk
+Cargo.lock
+
+# ============================================================================
+# 🛡️ ARQUIVOS DE SEGURANÇA E AUDITORIA
+# ============================================================================
+
+# Resultados de Varredura
+/scan_results/
+/vulnerabilities/
+/exploits_found/
+/payloads_generated/
+/session_*.json
+/attack_*.log
+/breach_*.log
+/penetration_*.log
+
+# Dados de Vítimas/Testes (NUNCA COMMITAR!)
+/victim_data/
+/target_data/
+/client_data/
+/customer_data/
+/user_data/
+/personal_data/
+/sensitive/
+/confidential/
+/restricted/
+/classified/
+
+# Evidências Forenses
+/forensics/
+/evidence/
+/capture/
+/pcap/
+/dump/
+/memory_dump/
+/disk_dump/
+
+# ============================================================================
+# 📁 DIRETÓRIOS ESPECÍFICOS DA ATENA
+# ============================================================================
+
+# Diretórios de Trabalho
+/work/
+/temp/
+/tmp/
+/runtime/
+/scratch/
+/staging/
+/archive/
+/old/
+/legacy/
+/deprecated/
+/experimental/
+/unused/
+/to_sort/
+/in_progress/
+
+# Diretórios de Usuário
+/home/
+/Users/
+/root/
+/Users/danilo/
+/home/danilo/
+/danilo/
+/danilo_gomes/
+
+# Diretórios de Sistema
+/proc/
+/sys/
+/dev/
+/boot/
+/usr/
+/var/
+/opt/
+/etc/
+
+# ============================================================================
+# 📝 ARQUIVOS DE METADADOS E ÍNDICES
+# ============================================================================
+
+# Git
+.git/
+.gitignore
+.gitattributes
+.gitmodules
+.gitkeep
+.gitignore_global
+.git-rewrite/
+
+# Version Control
+.svn/
+.hg/
+.bzr/
+.cvs/
+.github/
+.gitlab/
+.bitbucket/
+
+# IDE Metadata
+.project
+.classpath
+.settings/
+.idea/
+.vscode/
+*.sublime-*
+*.komodotools*
+*.netbeans*
+*.nbproject/
+
+# ============================================================================
+# 🔄 ARQUIVOS DE SINCRONIZAÇÃO
+# ============================================================================
+
+# Sync Metadata
+.last_sync
+.sync/
+.sync_state
+.sync_conflict*
+.sync_archive/
+.sync_temp/
+.sync_cache/
+.sync_log/
+.sync_lock
+.sync_token
+
+# Cloud Sync
+.dropbox/
+.google_drive/
+.one_drive/
+.icloud/
+.nextcloud/
+.owncloud/
+.mega/
+.pcloud/
+.box/
+.yandex_disk/
+
+# ============================================================================
+# ⚠️ REGRAS DE PROTEÇÃO ADICIONAIS (GLOBAL)
+# ============================================================================
+
+# Bloquear TODOS os arquivos .env em qualquer local
+**/.env
+**/.env.*
+**/env.*
+**/environment.*
+
+# Bloquear TODOS os arquivos de log
+**/*.log
+**/logs/
+**/Logs/
+
+# Bloquear TODOS os arquivos de configuração sensíveis
+**/config.*
+**/configuration.*
+**/settings.*
+**/secret.*
+**/private.*
+**/personal.*
+
+# Bloquear TODOS os arquivos de dados de usuário
+**/user.*
+**/users.*
+**/profile.*
+**/account.*
+**/password.*
+
+# Bloquear TODOS os backups
+**/*.backup
+**/*.bak
+**/backup/
+**/Backup/
+
+# ============================================================================
+# 🚫 BLOQUEIO TOTAL PARA CERTOS TIPOS DE ARQUIVO
+# ============================================================================
+
+# Bloquear TODOS os tipos de arquivo abaixo, em QUALQUER local
+*.key
+*.pem
+*.crt
+*.cer
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.secrets
+*.cred
+*.credential
+*.credentials
+*.env
+*.envrc
+*.id_rsa
+*.id_dsa
+*.id_ecdsa
+*.id_ed25519
+*.pgp
+*.gpg
+*.asc
+*.kdbx
+*.kdb
+*.db
+*.sqlite
+*.sql
+*.mdb
+*.accdb
+*.frm
+*.ibd
+*.myd
+*.myi
+*.dbf
+*.pkl
+*.pickle
+*.joblib
+*.sav
+*.model
+*.h5
+*.hdf5
+*.onnx
+*.pb
+*.tflite
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.dat
+*.idx
+*.index
+*.log
+*.logs
+*.out
+*.err
+*.output
+*.debug
+*.trace
+*.audit
+*.access
+*.error
+*.applog
+*.history
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+*.odt
+*.ods
+*.odp
+*.rtf
+*.tex
+*.bak
+*.backup
+*.bkp
+*.old
+*.orig
+*.tmp
+*.temp
+*.swp
+*.swo
+*.swn
+*~
+~*
+*.pyc
+*.pyo
+*.pyd
+*.exe
+*.dll
+*.so
+*.dylib
+*.msi
+*.deb
+*.rpm
+*.apk
+*.ipa
+
+# ============================================================================
+# 📌 EXCEÇÕES (ARQUIVOS QUE DEVEM SER VERSIONADOS)
+# ============================================================================
+
+# Templates e Exemplos
+!config.example
+!config.sample
+!.env.example
+!.env.sample
+!*.example.*
+!*.sample.*
+
+# Documentação Pública
+!README.md
+!LICENSE
+!CONTRIBUTING.md
+!CODE_OF_CONDUCT.md
+!SECURITY.md
+!CHANGELOG.md
+!docs/
+!*.md
+!*.txt
+!*.rst
+
+# Scripts Públicos
+!scripts/
+!tools/
+!utils/
+!*.sh
+!*.py
+!*.pl
+!*.rb
+!*.php
+!*.js
+!*.html
+!*.css
+
+# Arquivos de Configuração Públicos
+!.gitignore
+!.gitattributes
+!.editorconfig
+!.pre-commit-config.yaml
+!.dockerignore
+!.gitkeep
+!.npmignore
+!.eslintignore
+!.prettierignore
+!.stylelintignore
+
+# ============================================================================
+# 🔐 PROTEÇÃO FINAL - POLÍTICA DE SEGURANÇA
+# ============================================================================
+
+# Comentário de segurança no topo do arquivo
+# ⚠️ ATENÇÃO: Este .gitignore contém regras de segurança críticas
+# ⚠️ Não modifique sem autorização explícita do Danilo Gomes
+# ⚠️ Qualquer violação será rastreada e auditada
+
+# Forçar check de segurança em commits
+# (Requer git-secrets ou ferramenta similar)
+# git secrets --scan
+
+# Bloquear commit se arquivos sensíveis forem detectados
+# (Adicionar ao .git/hooks/pre-commit)
